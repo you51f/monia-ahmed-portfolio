@@ -718,8 +718,8 @@ color: rgb(255, 255, 255) !important;
   .fe-624c34946d0a1a1e97eb783a {
     --grid-gutter: calc(var(
     --sqs-site-gutter, 3.3vw) - 11.0px);
-    --cell-max-width: calc( ( var(
-    --sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+    /* --cell-max-width: calc( ( var(
+    --sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); */
     --inset-padding: 0vw;
 
     --row-height-scaling-factor: 0.0215;
@@ -925,6 +925,21 @@ color: rgb(255, 255, 255) !important;
     font-size: calc((2.2 - 1) * 1.2vw + 1rem);
   }
 @media (max-width: 768px) {
+  .developer {
+    display: flex;
+    justify-content: center;
+    padding: 6vmax 3.3vw 0;
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-right: 2vw;
+    color: rgb(88, 91, 97);
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.8em;
+    font-size: 1rem;
+    /* text-align: center; */
+}
   .dropdown {
     position: relative;
     display: none !important;
